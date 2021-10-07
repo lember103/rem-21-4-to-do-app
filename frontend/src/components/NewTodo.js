@@ -1,5 +1,10 @@
 import styled from "styled-components/macro";
 import {useState} from "react";
+import * as PropTypes from "prop-types";
+
+NewTodo.propTypes = {
+    onAdd: PropTypes.func.isRequired
+}
 
 export default function NewTodo({onAdd}) {
 

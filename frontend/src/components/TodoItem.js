@@ -1,5 +1,12 @@
 import styled from "styled-components/macro";
 import {useHistory} from "react-router-dom";
+import * as PropTypes from "prop-types";
+
+TodoItem.propTypes = {
+    todo: PropTypes.array.isRequired,
+    onAdvance: PropTypes.func,
+    onDelete: PropTypes.func
+}
 
 export default function TodoItem({todo, onAdvance, onDelete}) {
 
