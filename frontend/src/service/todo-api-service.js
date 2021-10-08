@@ -13,9 +13,7 @@ export const postTodo = (newDescription) => {
     status: "OPEN",
   };
 
-  return axios
-      .post("/api/todo", newTodo)
-      .then((response) => response.data);
+  return axios.post("/api/todo", newTodo).then((response) => response.data);
 };
 
 export const putTodo = (todo) => {
@@ -25,6 +23,5 @@ export const putTodo = (todo) => {
 };
 
 export const deleteTodo = (id) => {
-  return axios
-      .delete(`/api/todo/${id}`);
+  return axios.delete(`/api/todo/${id}`);
 };
